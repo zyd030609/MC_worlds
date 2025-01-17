@@ -1,0 +1,330 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2025-01-13 16:26:09
+Description: Rendering overlay
+
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:142) ~[modlauncher-10.2.3.jar:10.2.3]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:93) ~[modlauncher-10.2.3.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:107) ~[modlauncher-10.2.3.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:48) ~[modlauncher-10.2.3.jar:?]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.readerToClass(SecureModuleClassLoader.java:480) ~[securemodules-2.2.21.jar:2.2.21]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.findClass(SecureModuleClassLoader.java:406) ~[securemodules-2.2.21.jar:2.2.21]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.loadClass(SecureModuleClassLoader.java:422) ~[securemodules-2.2.21.jar:2.2.21]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.renderer.entity.EntityRenderDispatcher.onResourceManagerReload(EntityRenderDispatcher.java:564) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.packs.resources.ResourceManagerReloadListener.lambda$reload$0(ResourceManagerReloadListener.java:16) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:68) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:210) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:175) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:152) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.runTick(Minecraft.java:1199) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.0.16/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.0.16.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.0.16/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.0.16.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.3.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [entity_model_features-common.mixins.json:rendering.MixinEntityRenderers] from phase [DEFAULT] in config [entity_model_features-common.mixins.json] FAILED during APPLY
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:636) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:588) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	... 38 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @Inject annotation on emf$locateTransient could not find any targets matching 'lambda$createEntityRenderers$43(Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V' in net/minecraft/client/renderer/entity/EntityRenderers. No refMap loaded. [INJECT_PREPARE Applicator Phase -> entity_model_features-common.mixins.json:rendering.MixinEntityRenderers -> Prepare Injections -> handler$entitymodelf$zbe000$emf$locateTransient(Lcom/google/common/collect/ImmutableMap$Builder;Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V -> Parse ->  -> Validate Targets]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.selectors.TargetSelectors.validate(TargetSelectors.java:346) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:369) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:340) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:331) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo.<init>(CallbackInjectionInfo.java:48) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:196) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:664) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1377) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:728) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:313) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:244) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:398) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:380) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	... 38 more
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: mixin
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:MixinResourceReloadEnd
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:MixinResourceReloadStart
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:accessor.MinecraftClientAccessor
+    PLUGIN: mixin:APP:entity_texture_features-common.mixins.json:reloading.MixinMinecraftClient
+    PLUGIN: mixin:APP:entity_texture_features-common.mixins.json:reloading.MixinResourceReload
+    PLUGIN: mixin:AFTER
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.renderer.entity.EntityRenderDispatcher
+    REASON: mixin
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:accessor.EntityRenderDispatcherAccessor
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:rendering.MixinEntityRenderDispatcher
+    PLUGIN: mixin:APP:entity_texture_features-common.mixins.json:entity.misc.MixinEntityRenderDispatcher
+    PLUGIN: mixin:AFTER
+  net.minecraft.server.packs.resources.ResourceManagerReloadListener
+    REASON: computing_frames
+    REASON: classloading
+    REASON: mixin
+  net.minecraft.server.packs.resources.SimpleReloadInstance
+    REASON: classloading
+  net.minecraft.util.thread.BlockableEventLoop
+    REASON: mixin
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+  net.minecraft.util.thread.ReentrantBlockableEventLoop
+    REASON: mixin
+    REASON: computing_frames
+    REASON: classloading
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mods: NONE
+Stacktrace:
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.7.jar:0.8.7+Jenkins-b321.git-4053421aa10aaac6127d969028a29c94fe3054f6]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:142) ~[modlauncher-10.2.3.jar:10.2.3]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:93) ~[modlauncher-10.2.3.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:107) ~[modlauncher-10.2.3.jar:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:48) ~[modlauncher-10.2.3.jar:?]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.readerToClass(SecureModuleClassLoader.java:480) ~[securemodules-2.2.21.jar!/:?]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.findClass(SecureModuleClassLoader.java:406) ~[securemodules-2.2.21.jar!/:?]
+	at cpw.mods.securejarhandler/net.minecraftforge.securemodules.SecureModuleClassLoader.loadClass(SecureModuleClassLoader.java:422) ~[securemodules-2.2.21.jar!/:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.renderer.entity.EntityRenderDispatcher.onResourceManagerReload(EntityRenderDispatcher.java:564) ~[forge-1.21.4-54.0.16-client.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.packs.resources.ResourceManagerReloadListener.lambda$reload$0(ResourceManagerReloadListener.java:16) ~[forge-1.21.4-54.0.16-client.jar!/:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.server.packs.resources.SimpleReloadInstance.lambda$new$3(SimpleReloadInstance.java:68) ~[forge-1.21.4-54.0.16-client.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:210) ~[forge-1.21.4-54.0.16-client.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:23) ~[forge-1.21.4-54.0.16-client.jar!/:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:175) ~[forge-1.21.4-54.0.16-client.jar!/:?]
+Transformer Audit:
+  net.minecraft.client.renderer.entity.EntityRenderDispatcher
+    REASON: mixin
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:accessor.EntityRenderDispatcherAccessor
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:rendering.MixinEntityRenderDispatcher
+    PLUGIN: mixin:APP:entity_texture_features-common.mixins.json:entity.misc.MixinEntityRenderDispatcher
+    PLUGIN: mixin:AFTER
+  net.minecraft.server.packs.resources.ResourceManagerReloadListener
+    REASON: computing_frames
+    REASON: classloading
+    REASON: mixin
+  net.minecraft.server.packs.resources.SimpleReloadInstance
+    REASON: classloading
+  net.minecraft.util.thread.BlockableEventLoop
+    REASON: mixin
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    TRANSFORMER: OptiFine:default
+  net.minecraft.util.thread.ReentrantBlockableEventLoop
+    REASON: mixin
+    REASON: computing_frames
+    REASON: classloading
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraftforge.client.loading.ForgeLoadingOverlay
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:785) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.runTick(Minecraft.java:1240) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.0.16-client.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.0.16/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.0.16.jar!/:?]
+	at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.0.16/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.0.16.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.3.jar!/:?]
+	at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.3/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.3.jar!/:?]
+	at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+	at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: mixin
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: runtimedistcleaner:AFTER
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:MixinResourceReloadEnd
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:MixinResourceReloadStart
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:accessor.MinecraftClientAccessor
+    PLUGIN: mixin:APP:entity_texture_features-common.mixins.json:reloading.MixinMinecraftClient
+    PLUGIN: mixin:APP:entity_texture_features-common.mixins.json:reloading.MixinResourceReload
+    PLUGIN: mixin:AFTER
+    PLUGIN: runtimedistcleaner:AFTER
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.renderer.GameRenderer
+    REASON: mixin
+    TRANSFORMER: OptiFine:default
+    REASON: classloading
+    TRANSFORMER: OptiFine:default
+    PLUGIN: mixin:APP:entity_model_features-common.mixins.json:MixinGameRenderer
+    PLUGIN: mixin:AFTER
+
+
+-- Uptime --
+Details:
+	JVM uptime: 16.509s
+	Wall uptime: 6.191s
+	High-res time: 14.133s
+	Client ticks: 79 ticks / 3.950s
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: No
+	Packs: vanilla, mod_resources
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.4
+	Minecraft Version ID: 1.21.4
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.3, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 427367408 bytes (407 MiB) / 805306368 bytes (768 MiB) up to 10032775168 bytes (9568 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12600KF
+	Identifier: Intel64 Family 6 Model 151 Stepping 2
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 3.69
+	Number of physical packages: 1
+	Number of physical CPUs: 10
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce GTX 1060 3GB
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 3072.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 27.21.14.5751
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: DDR5
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: DDR5
+	Virtual memory max (MiB): 37471.07
+	Virtual memory used (MiB): 11684.82
+	Swap memory total (MiB): 4864.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): available: 105099.88, total: 299999.00
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 105099.88, total: 299999.00
+	Space in storage for io.netty.native.workdir (MiB): available: 105099.88, total: 299999.00
+	Space in storage for java.io.tmpdir (MiB): available: 87762.84, total: 176028.00
+	Space in storage for workdir (MiB): available: 105099.88, total: 299999.00
+	JVM Flags: 11 total; -Xmx9560m -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32m -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:-DontCompileHugeMethods -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Launched Version: 1.21.4-Forge-OptiFine
+	Launcher name: HMCL
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: GeForce GTX 1060 3GB/PCIe/SSE2 GL version 4.6.0 NVIDIA 457.51, NVIDIA Corporation
+	Window size: 854x480
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Universe: 400921fb54442d18
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 8/8 chunks
+	Resource Packs: vanilla, mod_resources
+	Current Language: zh_cn
+	Locale: zh_CN
+	System encoding: GBK
+	File encoding: GB18030
+	CPU: 16x 12th Gen Intel(R) Core(TM) i5-12600KF
+	OptiFine Version: OptiFine_1.21.4_HD_U_J3_pre10
+	OptiFine Build: 20250110-154932
+	Render Distance Chunks: 8
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.0 NVIDIA 457.51
+	OpenGlRenderer: GeForce GTX 1060 3GB/PCIe/SSE2
+	OpenGlVendor: NVIDIA Corporation
+	CpuCount: 16
+	ModLauncher: 10.2.3
+	ModLauncher launch target: forge_client
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/ slf4jfixer PLUGINSERVICE 
+		/ runtimedistcleaner PLUGINSERVICE 
+		/ runtime_enum_extender PLUGINSERVICE 
+		/ object_holder_definalize PLUGINSERVICE 
+		/ capability_token_subclass PLUGINSERVICE 
+		/ accesstransformer PLUGINSERVICE 
+		/ eventbus PLUGINSERVICE 
+		/ mixin PLUGINSERVICE 
+		/ fml TRANSFORMATIONSERVICE 
+		/ OptiFine TRANSFORMATIONSERVICE 
+		/ mixin TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		lowcodefml@54
+		minecraft@1.0
+		javafml@54.0.16
+	Mod List: 
+		forge-1.21.4-54.0.16-client.jar                   |Minecraft                     |minecraft                     |1.21.4              |DONE      |Manifest: NOSIGNATURE
+		entity_model_features_forge_1.21.4-2.4.1.jar      |Entity Model Features         |entity_model_features         |2.4.1               |DONE      |Manifest: NOSIGNATURE
+		entity_texture_features_forge_1.21.4-6.2.10.jar   |Entity Texture Features       |entity_texture_features       |6.2.10              |DONE      |Manifest: NOSIGNATURE
+		forge-1.21.4-54.0.16-universal.jar                |Forge                         |forge                         |54.0.16             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 834faa93-7c8f-4574-8768-4b8901e176d3
+	FML: 0.0
+	Forge: net.minecraftforge:54.0.16
